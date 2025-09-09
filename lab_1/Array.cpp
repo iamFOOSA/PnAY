@@ -1,5 +1,6 @@
 #include "Array.h"
 #include <iomanip>
+#include <format>
 #include <stdexcept>
 
 Array::Array(int r, int c) : rows(r), cols(c)
@@ -52,7 +53,7 @@ void Array::display() const
     {
         for (int j = 0; j < cols; j++)
         {
-            std::cout << std::setw(8) << data[i][j] << " ";
+            std::cout << std::format("{:8} ", data[i][j]);
         }
         std::cout << " " << std::endl;
     }
