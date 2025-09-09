@@ -20,7 +20,10 @@ int main()
 
         if (choice == 0) break;
 
-        int rows1, cols1, rows2, cols2;
+        int rows1;
+        int cols1;
+        int rows2;
+        int cols2;
 
         if (choice == 1)
         {
@@ -71,7 +74,6 @@ int main()
             cout << "Неверный выбор! Попробуйте снова." << endl;
         }
     }
-
     cout << "Программа завершена." << endl;
     return 0;
 }
