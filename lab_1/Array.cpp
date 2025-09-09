@@ -26,6 +26,7 @@ Array::Array(const Array& other) : rows(other.rows), cols(other.cols)
 
 Array::~Array()
 {
+
     for (int i = 0; i < rows; i++)
     {
         delete[] data[i];
